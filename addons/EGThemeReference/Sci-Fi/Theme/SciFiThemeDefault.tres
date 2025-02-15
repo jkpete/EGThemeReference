@@ -1,0 +1,11 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://ds3kscikob0ek"]
+
+[ext_resource type="StyleBox" uid="uid://s1lcxl3yrv0g" path="res://addons/EGThemeReference/Sci-Fi/StyleBox/Line/HSepatator.tres" id="1_3nts4"]
+[ext_resource type="StyleBox" uid="uid://cojbdvxmsqdr4" path="res://addons/EGThemeReference/Sci-Fi/StyleBox/Panel/PanelSoftShadow.tres" id="1_t2mko"]
+[ext_resource type="StyleBox" uid="uid://cacfnl6i85fn5" path="res://addons/EGThemeReference/Sci-Fi/StyleBox/Line/VSepatator.tres" id="3_1hnl6"]
+
+[resource]
+HSeparator/styles/separator = ExtResource("1_3nts4")
+Panel/styles/panel = ExtResource("1_t2mko")
+PanelContainer/styles/panel = ExtResource("1_t2mko")
+VSeparator/styles/separator = ExtResource("3_1hnl6")
