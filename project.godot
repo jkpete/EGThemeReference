@@ -14,8 +14,8 @@ config/name="ThemeReference"
 config/description="Showcases various Control nodes with their names affixed for easy recognition."
 config/version="v1.0s"
 config/tags=PackedStringArray("demo", "gui", "official")
-run/main_scene="res://addons/EGThemeReference/Sci-Fi/ThemeReview.tscn"
-config/features=PackedStringArray("4.3", "C#")
+run/main_scene="uid://dy11txudwdmgy"
+config/features=PackedStringArray("4.4", "C#")
 run/low_processor_mode=true
 config/icon="res://addons/EGThemeReference/icon.webp"
 

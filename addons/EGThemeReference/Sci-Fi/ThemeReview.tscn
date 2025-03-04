@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://bva8mf6jlphio"]
 
-[ext_resource type="Script" path="res://addons/EGThemeReference/Script/TestUI.cs" id="1_5akvl"]
+[ext_resource type="Script" uid="uid://bxljyuxwa1u2k" path="res://addons/EGThemeReference/Script/TestUI.cs" id="1_5akvl"]
 [ext_resource type="Theme" uid="uid://ds3kscikob0ek" path="res://addons/EGThemeReference/Sci-Fi/Theme/SciFiThemeDefault.tres" id="1_c132w"]
 [ext_resource type="Texture2D" uid="uid://brwp8bimc75uu" path="res://addons/EGThemeReference/icon.webp" id="2_jfq04"]
-[ext_resource type="Script" path="res://addons/EGThemeReference/Element/tree.gd" id="3_5aotb"]
+[ext_resource type="Script" uid="uid://otlnxk1i66l4" path="res://addons/EGThemeReference/Element/tree.gd" id="3_5aotb"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_wonbs"]
 
@@ -458,6 +458,7 @@ text = "MenuButton"
 flat = false
 item_count = 8
 popup/item_0/text = "Action Item"
+popup/item_0/id = 0
 popup/item_1/text = "Separator"
 popup/item_1/id = 1
 popup/item_1/separator = true
