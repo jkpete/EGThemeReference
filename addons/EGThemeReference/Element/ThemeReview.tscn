@@ -92,6 +92,7 @@ tooltip_text = "This is a tooltip.
 Its background is styled using the TooltipPanel class within a Theme resource.
 Its text is styled using the TooltipLabel class within a Theme resource."
 text = "LinkButton (hover me for tooltip)"
+uri = "https://www.godotengine.org"
 
 [node name="ColorPickerContainer" type="HBoxContainer" parent="MainPanel/HSplitContainer/BasicControls/VBoxContainer"]
 layout_mode = 2

@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=114 format=3 uid="uid://c3lr0arm7bsr6"]
+[gd_resource type="Theme" load_steps=123 format=3 uid="uid://c3lr0arm7bsr6"]
 
 [ext_resource type="FontFile" uid="uid://sp3y4ua5d723" path="res://addons/EGThemeReference/Font/SourceHanSansCN/SubsetOTF/CN/SourceHanSansCN-Medium.otf" id="1_3p3w3"]
 [ext_resource type="StyleBox" uid="uid://dbdajx5u81imv" path="res://addons/EGThemeReference/Element/StyleBox/Button/Default_Disabled.tres" id="1_m6stj"]
@@ -67,6 +67,7 @@
 [ext_resource type="StyleBox" uid="uid://bdf8rotmf6ocl" path="res://addons/EGThemeReference/Element/StyleBox/Window/PopUpBasic.tres" id="42_s84vl"]
 [ext_resource type="StyleBox" uid="uid://flaw0thfncs4" path="res://addons/EGThemeReference/Element/StyleBox/Window/WindowPanel.tres" id="44_4malq"]
 [ext_resource type="StyleBox" uid="uid://pk82fasdt553" path="res://addons/EGThemeReference/Element/StyleBox/Window/PopUpMenuSelected.tres" id="44_ydxff"]
+[ext_resource type="StyleBox" uid="uid://cgp7lkhsn5f6l" path="res://addons/EGThemeReference/Sci-Fi/StyleBox/ItemList/ItemListItem_Focus.tres" id="46_ej3v2"]
 [ext_resource type="StyleBox" uid="uid://dru35cm6aouqd" path="res://addons/EGThemeReference/Element/StyleBox/ScrollBar/ScrollBar_Grabber.tres" id="46_pjl5u"]
 [ext_resource type="FontFile" uid="uid://dvpq55ofgbk6t" path="res://addons/EGThemeReference/Font/SourceHanSansCN/SubsetOTF/CN/SourceHanSansCN-Normal.otf" id="47_dvo3i"]
 [ext_resource type="StyleBox" uid="uid://ddimv452vcow7" path="res://addons/EGThemeReference/Element/StyleBox/ScrollBar/ScrollBar_GrabberHover.tres" id="47_q2lfq"]
@@ -76,6 +77,10 @@
 [ext_resource type="Texture2D" uid="uid://bx1h0y3c61ixw" path="res://addons/EGThemeReference/Element/Icon/UI/CheckBox/CheckBox_Indeterminate.svg" id="52_smkwn"]
 [ext_resource type="StyleBox" uid="uid://blebetbs5vb1k" path="res://addons/EGThemeReference/Element/StyleBox/ScrollBar/VScrollBar_BackGroundFocus.tres" id="52_tsvs0"]
 [ext_resource type="Texture2D" uid="uid://c08yigp3agxpn" path="res://addons/EGThemeReference/Element/Icon/UI/CheckBox/CheckBox_IndeterminateDisabled.svg" id="53_1nlon"]
+[ext_resource type="Texture2D" uid="uid://cjt16lm7h8c7n" path="res://addons/EGThemeReference/Element/Icon/UI/Arrow/down_disabled.svg" id="58_f5k1j"]
+[ext_resource type="Texture2D" uid="uid://ccqdolnqtgo2u" path="res://addons/EGThemeReference/Element/Icon/UI/Arrow/down_hover.svg" id="59_w3h0x"]
+[ext_resource type="Texture2D" uid="uid://cu0cjh6sdej6n" path="res://addons/EGThemeReference/Element/Icon/UI/Arrow/up_disabled.svg" id="60_xocd2"]
+[ext_resource type="Texture2D" uid="uid://8bjqys5pmrbx" path="res://addons/EGThemeReference/Element/Icon/UI/Arrow/up_hover.svg" id="61_6uoog"]
 [ext_resource type="StyleBox" uid="uid://b82blgh8qlmjc" path="res://addons/EGThemeReference/Element/StyleBox/Window/WindowBasic.tres" id="66_fyh6m"]
 [ext_resource type="Texture2D" uid="uid://c7pgs77xfsoi2" path="res://addons/EGThemeReference/Element/Icon/UI/CloseButton/Close_Normal.svg" id="69_hjskp"]
 [ext_resource type="Texture2D" uid="uid://ogbxvctpnbbm" path="res://addons/EGThemeReference/Element/Icon/UI/CloseButton/Close_Pressed.svg" id="70_mdhrq"]
@@ -109,6 +114,14 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v2vm8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dbvm5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f5k1j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w3h0x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xocd2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6uoog"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dpoe1"]
 
@@ -243,6 +256,7 @@ HSlider/styles/grabber_area_highlight = ExtResource("19_ggyts")
 HSlider/styles/slider = ExtResource("20_e0i1c")
 ItemList/colors/font_color = Color(0.376471, 0.384314, 0.4, 1)
 ItemList/colors/font_hovered_color = Color(0.25098, 0.619608, 1, 1)
+ItemList/colors/font_hovered_selected_color = Color(0.25098, 0.619608, 1, 1)
 ItemList/colors/font_selected_color = Color(0.25098, 0.619608, 1, 1)
 ItemList/colors/guide_color = Color(0.921569, 0.933333, 0.960784, 1)
 ItemList/constants/h_separation = 12
@@ -253,6 +267,8 @@ ItemList/styles/cursor = SubResource("StyleBoxEmpty_5skop")
 ItemList/styles/cursor_unfocused = SubResource("StyleBoxEmpty_v2vm8")
 ItemList/styles/focus = SubResource("StyleBoxEmpty_dbvm5")
 ItemList/styles/hovered = ExtResource("29_0bi0s")
+ItemList/styles/hovered_selected = ExtResource("46_ej3v2")
+ItemList/styles/hovered_selected_focus = ExtResource("46_ej3v2")
 ItemList/styles/panel = ExtResource("52_k4vvn")
 ItemList/styles/selected = ExtResource("29_0bi0s")
 ItemList/styles/selected_focus = ExtResource("29_0bi0s")
@@ -314,7 +330,18 @@ RichTextLabel/font_sizes/italics_font_size = 14
 RichTextLabel/font_sizes/mono_font_size = 14
 RichTextLabel/font_sizes/normal_font_size = 14
 RichTextLabel/styles/focus = ExtResource("31_kn0rj")
-SpinBox/icons/updown = ExtResource("23_bc3xf")
+SpinBox/icons/down = ExtResource("27_860gj")
+SpinBox/icons/down_disabled = ExtResource("58_f5k1j")
+SpinBox/icons/down_hover = ExtResource("59_w3h0x")
+SpinBox/icons/down_pressed = ExtResource("59_w3h0x")
+SpinBox/icons/up = ExtResource("19_uc08g")
+SpinBox/icons/up_disabled = ExtResource("60_xocd2")
+SpinBox/icons/up_hover = ExtResource("61_6uoog")
+SpinBox/icons/up_pressed = ExtResource("61_6uoog")
+SpinBox/styles/down_background_hovered = SubResource("StyleBoxEmpty_f5k1j")
+SpinBox/styles/down_background_pressed = SubResource("StyleBoxEmpty_w3h0x")
+SpinBox/styles/up_background_hovered = SubResource("StyleBoxEmpty_xocd2")
+SpinBox/styles/up_background_pressed = SubResource("StyleBoxEmpty_6uoog")
 TabBar/colors/font_disabled_color = Color(0.752941, 0.768627, 0.8, 1)
 TabBar/colors/font_hovered_color = Color(0.25098, 0.619608, 1, 1)
 TabBar/colors/font_selected_color = Color(0.25098, 0.619608, 1, 1)
@@ -377,6 +404,7 @@ TooltipPanel/styles/panel = ExtResource("20_iqlbw")
 Tree/colors/children_hl_line_color = Color(0.862745, 0.87451, 0.901961, 1)
 Tree/colors/custom_button_font_highlight = Color(0.25098, 0.619608, 1, 1)
 Tree/colors/font_color = Color(0.376471, 0.384314, 0.4, 1)
+Tree/colors/font_hovered_color = Color(0.25098, 0.619608, 1, 1)
 Tree/colors/font_selected_color = Color(0.25098, 0.619608, 1, 1)
 Tree/colors/guide_color = Color(0.921569, 0.933333, 0.960784, 1)
 Tree/colors/parent_hl_line_color = Color(0.894118, 0.905882, 0.929412, 1)
