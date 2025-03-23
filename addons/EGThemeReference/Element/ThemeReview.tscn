@@ -1,9 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://dy11txudwdmgy"]
+[gd_scene load_steps=8 format=3 uid="uid://dy11txudwdmgy"]
 
 [ext_resource type="Theme" uid="uid://c3lr0arm7bsr6" path="res://addons/EGThemeReference/Element/Theme/ElementDefault.tres" id="1_jfubg"]
 [ext_resource type="Texture2D" uid="uid://brwp8bimc75uu" path="res://addons/EGThemeReference/icon.webp" id="1_qvufh"]
 [ext_resource type="Script" uid="uid://otlnxk1i66l4" path="res://addons/EGThemeReference/Element/tree.gd" id="2_2kdtq"]
 [ext_resource type="Script" uid="uid://bxljyuxwa1u2k" path="res://addons/EGThemeReference/Script/TestUI.cs" id="2_xi0id"]
+[ext_resource type="Script" uid="uid://bxboshjxf34t1" path="res://addons/EGThemeReference/Script/TestSvg.cs" id="4_638y5"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_bj2lj"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_t0nh8"]
 
@@ -412,6 +415,12 @@ texture_progress = ExtResource("1_qvufh")
 [node name="Label" type="Label" parent="MainPanel/HSplitContainer/VSplitContainer/Numbers/VBoxContainer/TextureProgressContainer"]
 layout_mode = 2
 text = "TextureProgressBar"
+
+[node name="TextureRect" type="TextureRect" parent="MainPanel/HSplitContainer/VSplitContainer/Numbers/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+texture = SubResource("ImageTexture_bj2lj")
+script = ExtResource("4_638y5")
 
 [node name="Lists" type="PanelContainer" parent="MainPanel/HSplitContainer/VSplitContainer"]
 layout_mode = 2
