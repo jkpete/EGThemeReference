@@ -5,6 +5,7 @@ public partial class TestSvg : TextureRect
 {
     public override void _Ready()
     {
+        // GD.Print("UID:"+GenerateUID());
         this.Texture = GenerateTexture();
         //base._Ready();
     }
@@ -14,5 +15,10 @@ public partial class TestSvg : TextureRect
         image.LoadSvgFromString(svgTest);
         ImageTexture texture = ImageTexture.CreateFromImage(image);
         return texture;
+    }
+    public string GenerateUID(){
+        long id = ResourceUid.CreateId();
+        string uid = ResourceUid.IdToText(id);
+        return uid;
     }
 }
