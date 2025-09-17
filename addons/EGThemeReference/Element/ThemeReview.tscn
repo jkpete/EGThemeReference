@@ -21,8 +21,9 @@ metadata/_edit_use_anchors_ = true
 
 [node name="FileDialog2" type="FileDialog" parent="."]
 auto_translate_mode = 1
+oversampling_override = 1.0
 initial_position = 1
-size = Vector2i(640, 480)
+size = Vector2i(960, 480)
 
 [node name="MainPanel" type="ColorRect" parent="."]
 layout_mode = 1
@@ -571,9 +572,10 @@ text = " 你真的要退出吗？"
 
 [node name="FileDialog" type="FileDialog" parent="MainPanel"]
 transparent_bg = true
+oversampling_override = 1.0
 title = "Open a File"
 initial_position = 1
-size = Vector2i(640, 480)
+size = Vector2i(960, 480)
 ok_button_text = "Open"
 file_mode = 0
 

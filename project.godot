@@ -15,7 +15,7 @@ config/description="Showcases various Control nodes with their names affixed for
 config/version="v1.0s"
 config/tags=PackedStringArray("demo", "gui", "official")
 run/main_scene="uid://dy11txudwdmgy"
-config/features=PackedStringArray("4.4", "C#")
+config/features=PackedStringArray("4.5", "C#")
 run/low_processor_mode=true
 config/icon="res://addons/EGThemeReference/icon.webp"
 
